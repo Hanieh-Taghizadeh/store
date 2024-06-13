@@ -4,7 +4,8 @@ import entity.Product;
 import entity.User;
 import repository.ProductRepository;
 
-public class ProductService {  private final ProductRepository productRepository = new ProductRepository();
+public class ProductService {
+    private final ProductRepository productRepository = new ProductRepository();
 
     public void addProductToCart(String productName, User user, int quantity) throws Exception {
         Product product = productRepository.findByName(productName);

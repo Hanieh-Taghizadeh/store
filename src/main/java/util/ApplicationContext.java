@@ -18,7 +18,7 @@ public class ApplicationContext {
         userRepository = new UserRepository();
         productRepository = new ProductRepository();
         productService = new ProductService();
-        userService = new UserService();
+        userService = new UserService(userRepository);
     }
 
     public static ApplicationContext getInstance() {

@@ -1,12 +1,17 @@
 package menu;
 
 import entity.User;
+
+import repository.ProductRepository;
+import repository.UserRepository;
 import service.UserService;
 import util.ApplicationContext;
 
+import java.util.Optional;
 import java.util.Scanner;
 
-public class Menu { private final ApplicationContext context;
+public class Menu {
+    private final ApplicationContext context;
 
     public Menu() {
         context = ApplicationContext.getInstance();
